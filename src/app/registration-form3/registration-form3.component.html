@@ -1,0 +1,23 @@
+<div class="row">
+    <section>
+      <h1 class="heading">Employment Details</h1>
+      <div class="registration-form">
+        <form #employmentDetails="ngForm" (ngSubmit)="registerEmployment(employmentDetails)">
+          <div class="form">
+            <input type="text" placeholder="Email" name="Email" ngModel/>
+          </div>
+          <div class="form">
+            <input type="text" placeholder="Type of Employment" name="typeOfEmployment" ngModel/>
+          </div>
+          <div class="form">
+            <input type="number" placeholder="Annual Salary" name="annualSalary" ngModel />
+          </div>
+          <div class="form">
+            <input type="number" placeholder="Any existing EMI" name="existingEMI" ngModel />
+          </div>
+          <!-- <div class="signup-btn"> -->
+          <div class="next-btn">
+            <button type="submit" class="btn">Next</button>
+          </div>
+        </form>
+      </div>

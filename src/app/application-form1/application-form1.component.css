@@ -1,0 +1,36 @@
+body{
+	background-color: #e5e3e8;
+}
+div{
+	position:relative;
+	top:80px;
+	margin: auto;
+	width:30%;
+	border-radius: 10px;
+}
+h3,pre{
+	text-align: center;
+	font-family:helvetica;
+}
+span{
+	position: relative;
+	left:185px;
+}
+#d1{
+	background-color: white;
+	padding:40px;
+}
+.btn{
+	width:100%;
+}
+#d2{
+	background-color: white;
+	padding:10px;
+	text-align:center;
+}
+#d3{
+	margin:auto;
+	position:relative;
+	left:180px;
+}
+

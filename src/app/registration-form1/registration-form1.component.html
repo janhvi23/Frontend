@@ -1,0 +1,40 @@
+<div class="row">
+    <section>
+      <h1 class="heading">Personal Details</h1>
+      <div class="registration-form">
+        <form #personalDetails="ngForm" (ngSubmit)="registerPersonal(personalDetails)">
+          <div class="form">
+            <input type="text" placeholder="Enter Name" name="Name" ngModel/>
+          </div>
+          <div class="form">
+            <input type="email" placeholder="Enter Email" name="Email" ngModel/>
+          </div>
+          <div class="form">
+            <input type="number" placeholder="Enter Age" name="age" ngModel/>
+          </div>
+          <div class="form">
+            <input type="text" placeholder="Enter Gender" name="gender" ngModel />
+          </div>
+          <div class="form">
+            <input type="number" placeholder="Enter Phone Number" name="PhoneNumber" ngModel />
+          </div>
+          <div class="form">
+            <input type="text" placeholder="Enter State" name="State" ngModel />
+          </div>
+          <div class="form">
+            <input type="text" placeholder="Enter City" name="city" ngModel/>
+          </div>
+          <div class="form">
+            <input type="text" placeholder="Enter Address" name="Address" ngModel />
+          </div><div class="form">
+            <input type="text" placeholder="Enter PIN Code" name="Pincode" ngModel/>
+          </div>
+
+          <!-- <div class="signup-btn"> -->
+          <div class="next-btn">
+            <button class="btn">Next</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>

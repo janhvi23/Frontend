@@ -1,0 +1,82 @@
+<navbarmain></navbarmain>
+<br>
+
+<!-- cards -->
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">EMI Calculator</h5>
+          <!-- <form class="form" #EMI="ngForm"> -->
+            <div class="form-group row">
+              <label for="Amount" class="col-sm-4 col-form-label">Loan Amount</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="Amount" name="amount" [(ngModel)]=loanAmount>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputTenure" class="col-sm-4 col-form-label">Loan Tenure</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="inputTenure"name="tenure" [(ngModel)]=loanTenure>
+              </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputROI" class="col-sm-4 col-form-label">Rate of Interest</label>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="inputROI" name="rate" [(ngModel)]=roi>
+                  <button type="submit" (click) = "calcEMI()" class="btn btn-primary mb-2">Calculate EMI</button>
+                </div>
+                </div>
+                  
+                  <div class="form-group row">
+                    <label for="inputEMI" class="col-sm-4 col-form-label">EMI</label>
+                    <div class="col-sm-4">
+                      <input type="text" disabled class="form-control" id="inputEMI" [(ngModel)]=emi>
+                </div>
+              </div>
+          <!-- </form> -->
+          
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+            <div class="wrapper">
+            <button type="button" class="btn btn-primary btn-sm-3">Register</button>
+            <button type="button" class="btn btn-primary btn-sm-3">Login</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="card mb-4 shadow-sm">
+        <div class="card-header badge-dark">
+            <h4 class="my-0 font-weight-normal">Wheeloan</h4>
+        </div>
+
+        <div class="card-body bg-chng">
+              <br/>
+                  <a routerLink="/login"><button type="button" class="btn btn-lg btn-block btn-secondary">User Login</button></a>
+                  <br/>
+                  <a routerLink="/appFormOne"><button type="button" class="btn btn-lg btn-block btn-secondary">Create Account</button></a>
+
+                  <br/>
+                  <a><button type="button" class="btn btn-lg btn-block btn-secondary">Admin Login</button></a>
+                  <br/>
+                  <a routerLink="/contactus" class="badge badge-warning" text-align="text-center">Contact Customer Care</a>
+        </div>
+  </div>
+  </div>
+  <br>
+
+
+  <div class="cardz">
+    <div class="jumbotron jumbotron-fluid bg-warning">
+          <div class="container">
+              <img class="img-responsive" src="/assets/IMAGES/Car1.jpg" width="100%" height="300" alt="">
+                    <h1 class="display-4">We are here for you 24*7</h1>
+                    <h2>Bank online safely and securely from the comfort of your home.</h2>
+                    <a  class="btn btn-danger btn-lg" routerLink="/learnmore" role="button">Learn more</a>
+          </div>
+    </div>
+</div>

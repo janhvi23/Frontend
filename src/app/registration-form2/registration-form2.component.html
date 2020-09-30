@@ -1,0 +1,24 @@
+<div class="row">
+    <section>
+      <h1 class="heading">Vehicle Details</h1>
+      <div class="registration-form">
+        <form #vehicleDetails="ngForm" (ngSubmit)="registerVehicle(vehicleDetails)">
+          <div class="form">
+            <input type="text" placeholder="Car Make" name="carMake" ngModel/>
+          </div>
+          <div class="form">
+            <input type="text" placeholder="Car Model" name="carModel" ngModel/>
+          </div>
+          <div class="form">
+            <input type="number" placeholder="Showroom Price" name="showroomPrice" ngModel />
+          </div>
+          <div class="form">
+            <input type="number" placeholder="On road price" name="onRoadPrice" ngModel />
+          </div>
+          <!-- <div class="signup-btn"> -->
+          <div class="next-btn">
+            <button type="submit" class="btn">Next</button>
+          </div>
+        </form>
+      </div>
+
